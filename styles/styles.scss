@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: whitesmoke;
+    min-height: 100vh;
+}
+
+.menu-top {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
+
+@import './partials/main-page';
