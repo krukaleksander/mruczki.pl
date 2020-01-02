@@ -12,11 +12,13 @@
         margin: 0px auto;
         padding: 50px 0 10px 0;
         font-family: 'Kulim Park', sans-serif;
+        animation: headerAppear 1s .6s cubic-bezier(0, 0.72, 0.52, 0.8) both;
 
         @include ipadPro {
             background: rgba(255, 255, 255, 0.82);
             border-radius: 2px;
             padding-top: 5px;
+
         }
 
         .menu-mo-btn {
@@ -41,6 +43,7 @@
 
     main {
         font-family: 'Kulim Park', sans-serif;
+        overflow: hidden;
 
         @include ipadPro {
             background: rgba(255, 255, 255, 0.82);
@@ -48,6 +51,7 @@
             margin: 0 auto;
             border-radius: 2px;
             box-shadow: 0px 0px 30px rgb(228, 166, 166);
+            animation: mainAppear .5s .1s linear both;
         }
 
         .headings {
@@ -129,5 +133,25 @@
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes headerAppear {
+    0% {
+        transform: translateY(-300px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes mainAppear {
+    from {
+        width: 0vw;
+    }
+
+    to {
+        width: 90vw;
     }
 }
