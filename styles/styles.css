@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Kulim+Park:400,700&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,15 @@
 body {
   background: whitesmoke;
   min-height: 100vh;
+}
+
+@media (min-width: 1023px) {
+  body {
+    background: url("../img/dom-tymczasowy-desktop.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 .menu-top {
@@ -26,6 +36,14 @@ body {
   margin: 0px auto;
   padding: 50px 0 10px 0;
   font-family: 'Kulim Park', sans-serif;
+}
+
+@media (min-width: 1023px) {
+  .wrap-main header {
+    background: rgba(255, 255, 255, 0.82);
+    border-radius: 2px;
+    padding-top: 5px;
+  }
 }
 
 .wrap-main header .menu-mo-btn {
@@ -51,16 +69,47 @@ body {
   font-family: 'Kulim Park', sans-serif;
 }
 
+@media (min-width: 1023px) {
+  .wrap-main main {
+    background: rgba(255, 255, 255, 0.82);
+    width: 90vw;
+    margin: 0 auto;
+    border-radius: 2px;
+    box-shadow: 0px 0px 30px #e4a6a6;
+  }
+}
+
+@media (min-width: 1023px) {
+  .wrap-main main .headings {
+    background: transparent;
+    width: 80vw;
+    margin: 0 auto;
+  }
+}
+
 .wrap-main main .title-main {
+  font-family: 'Pacifico', cursive;
   font-size: 25px;
   font-weight: bolder;
   text-align: center;
   text-transform: uppercase;
 }
 
+@media (min-width: 1023px) {
+  .wrap-main main .title-main {
+    padding-top: 20px;
+  }
+}
+
 .wrap-main main .title-main-low {
-  text-transform: lowercase;
+  text-transform: none;
   font-size: 20px;
+}
+
+@media (min-width: 1023px) {
+  .wrap-main main .title-main-low {
+    padding-top: 5px;
+  }
 }
 
 .wrap-main main .main-desc {
@@ -78,10 +127,11 @@ body {
   .wrap-main main .main-desc {
     width: 80vw;
     margin: 15px auto;
+    font-size: 1rem;
   }
 }
 
-footer {
+.partners {
   margin: 5px auto;
   background: rgba(255, 193, 7, 0.43);
   font-family: 'Kulim Park', sans-serif;
@@ -90,14 +140,20 @@ footer {
   border-radius: 2px;
 }
 
-footer h2 {
+@media (min-width: 1023px) {
+  .partners {
+    background: transparent;
+  }
+}
+
+.partners h2 {
   font-size: 25px;
   font-weight: bolder;
   text-align: center;
   text-transform: uppercase;
 }
 
-footer .hand-shake {
+.partners .hand-shake {
   text-align: center;
   font-size: 20px;
   margin-bottom: 0px;
