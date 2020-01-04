@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/styles/styles.css"> 
+<?php wp_head(); ?>  
 </head>
 
 <body>
@@ -28,7 +28,7 @@
         </div>
 
         <header>
-            <img src="./img/mruczki.png" alt="dom tymczasowy warszawa" class="logo-header">
+            <img src="<?php bloginfo('template_url'); ?>/img/mruczki.png" alt="dom tymczasowy warszawa" class="logo-header">
             <h1>mruczki.pl</h1>
         </header>
         <hr>
@@ -37,7 +37,11 @@
                 <h2 class="title-main">Dom tymczasowy</h2>
                 <h2 class="title-main title-main-low">w Warszawie</h2>
             </div>
-
+            <?php if(have_posts()) : ?>
+<?php while(have_posts()) : the_post(); ?> 
+<?php the_content(); ?>
+<?php endwhile; ?>
+<?php endif; ?> 
             <p class="main-desc"><i class="fas fa-paw"></i><br>Dom tymczasowy prowadzę od kilku lat, dobro kotów jest
                 dla mnie najwyższą wartością.
                 Odkąd adoptowałam Lilkę, zakochałam się bez pamięci w tych cudownych stworzeniach, teraz pomagam
@@ -70,6 +74,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+<?php wp_footer(); ?>
 </body>
 
 </html>
