@@ -26,6 +26,43 @@ body {
   left: 5px;
 }
 
+div#menu-sign {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  z-index: 1;
+}
+
+div#menu-sign .fa-sort-down {
+  transform: rotateZ(-90deg);
+  line-height: 25px;
+}
+
+div#menu-sign .fa-sort-down.active {
+  transform: rotateZ(90deg);
+}
+
+div#menu-sign div.menu-header-menu-container {
+  padding: 8px;
+  background: #a8e0a8;
+  font-weight: bolder;
+  border-radius: 6px;
+  text-transform: uppercase;
+  position: absolute;
+  top: -1px;
+  right: -160px;
+  display: none;
+}
+
+div#menu-sign div.menu-header-menu-container ul {
+  list-style: none;
+}
+
+div#menu-sign div.menu-header-menu-container ul li li a:hover {
+  background-color: #555;
+  color: white;
+}
+
 header {
   width: 260px;
   margin: 0px auto;
@@ -40,13 +77,6 @@ header {
     border-radius: 2px;
     padding-top: 5px;
   }
-}
-
-header .menu-mo-btn {
-  position: fixed;
-  top: 5px;
-  right: 5px;
-  font-size: 30px;
 }
 
 header h1 {

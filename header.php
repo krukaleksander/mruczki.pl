@@ -13,7 +13,9 @@
 	<?php wp_head(); ?>
 </head>     
 <body>
-<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>  
+    <div id="menu-sign"><button id="menu-mobile-btn" class="btn btn-success">Menu <i class="fas fa-sort-down"></i></button>
+    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>  
+</div>
 <header>
         <img src="<?php bloginfo('template_url'); ?>/img/mruczki.png" alt="dom tymczasowy warszawa" class="logo-header">
             <h1>mruczki.pl</h1>
