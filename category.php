@@ -12,7 +12,7 @@ the_post_thumbnail('thumbnail');
 		<span><?php the_author(); ?></span>|
 		<span><?php the_time('d-m-Y'); ?></span>
 	</div> -->
-	<p> <?php the_excerpt(); ?> </p>
+	<p class='short-desc-cat'> <?php the_excerpt(); ?> </p>
 	<a class="more" href="<?php the_permalink(); ?>"> Więcej informacji</a>
 	<p class="comments"><?php comments_popup_link ('Brak komentarzy', 'Jeden komentarz', 'Komentarzy: %'); ?></p>
 </article>

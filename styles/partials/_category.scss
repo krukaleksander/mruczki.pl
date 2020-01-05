@@ -1,1 +1,42 @@
 @import './mixins';
+@import url('https://fonts.googleapis.com/css?family=Kulim+Park:400,700&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+.wrap-category {
+    @include ipadPro {
+        width: 90vw;
+        padding: 10px;
+        margin: 0 auto;
+        background: rgba(245, 245, 245, 0.9098039215686274);
+        border-radius: 10px;
+    }
+
+    h2.cat-name {
+        text-align: center;
+        font-family: 'Pacifico', cursive;
+    }
+
+    article {
+        text-align: center;
+
+        @include ipadPro {
+            margin-bottom: 10px;
+            border: 1px solid rgba(128, 128, 128, 0.3803921568627451);
+            padding: 5px;
+            border-radius: 2px;
+        }
+
+        img {
+            border-radius: 25px;
+            border: 2px solid rgb(218, 218, 218);
+            padding: 2px;
+        }
+
+    }
+
+    article p:nth-of-type(2) {
+        font-size: 18px;
+        font-family: 'Kulim Park', sans-serif;
+        letter-spacing: 1px;
+    }
+}
