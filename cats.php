@@ -1,6 +1,6 @@
 <?php 
 /*
-Template Name: Kontakt
+Template Name: Podopieczni
 */
 ?>
 <?php get_header(); ?>

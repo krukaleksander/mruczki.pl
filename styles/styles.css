@@ -26,12 +26,7 @@ body {
   left: 5px;
 }
 
-.wrap-main {
-  animation: mainpage .5s ease-out;
-  animation-iteration-count: 1;
-}
-
-.wrap-main header {
+header {
   width: 260px;
   margin: 0px auto;
   padding: 50px 0 10px 0;
@@ -40,21 +35,21 @@ body {
 }
 
 @media (min-width: 1023px) {
-  .wrap-main header {
+  header {
     background: rgba(255, 255, 255, 0.82);
     border-radius: 2px;
     padding-top: 5px;
   }
 }
 
-.wrap-main header .menu-mo-btn {
+header .menu-mo-btn {
   position: fixed;
   top: 5px;
   right: 5px;
   font-size: 30px;
 }
 
-.wrap-main header h1 {
+header h1 {
   display: inline-block;
   height: 100px;
   line-height: 100px;
@@ -62,8 +57,13 @@ body {
   margin-left: -30px;
 }
 
-.wrap-main header .logo-header {
+header .logo-header {
   width: 100px;
+}
+
+.wrap-main {
+  animation: mainpage .5s ease-out;
+  animation-iteration-count: 1;
 }
 
 .wrap-main main {

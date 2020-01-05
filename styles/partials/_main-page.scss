@@ -3,43 +3,44 @@
 
 @import './mixins';
 
+header {
+    width: 260px;
+    margin: 0px auto;
+    padding: 50px 0 10px 0;
+    font-family: 'Kulim Park', sans-serif;
+    animation: headerAppear 1s .6s cubic-bezier(0, 0.72, 0.52, 0.8) both;
+
+    @include ipadPro {
+        background: rgba(255, 255, 255, 0.82);
+        border-radius: 2px;
+        padding-top: 5px;
+
+    }
+
+    .menu-mo-btn {
+        position: fixed;
+        top: 5px;
+        right: 5px;
+        font-size: 30px;
+    }
+
+    h1 {
+        display: inline-block;
+        height: 100px;
+        line-height: 100px;
+        vertical-align: top;
+        margin-left: -30px;
+    }
+
+    .logo-header {
+        width: 100px;
+    }
+}
+
 .wrap-main {
     animation: mainpage .5s ease-out;
     animation-iteration-count: 1;
 
-    header {
-        width: 260px;
-        margin: 0px auto;
-        padding: 50px 0 10px 0;
-        font-family: 'Kulim Park', sans-serif;
-        animation: headerAppear 1s .6s cubic-bezier(0, 0.72, 0.52, 0.8) both;
-
-        @include ipadPro {
-            background: rgba(255, 255, 255, 0.82);
-            border-radius: 2px;
-            padding-top: 5px;
-
-        }
-
-        .menu-mo-btn {
-            position: fixed;
-            top: 5px;
-            right: 5px;
-            font-size: 30px;
-        }
-
-        h1 {
-            display: inline-block;
-            height: 100px;
-            line-height: 100px;
-            vertical-align: top;
-            margin-left: -30px;
-        }
-
-        .logo-header {
-            width: 100px;
-        }
-    }
 
     main {
         font-family: 'Kulim Park', sans-serif;
