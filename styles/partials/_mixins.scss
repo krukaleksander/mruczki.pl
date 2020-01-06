@@ -68,3 +68,14 @@ $common: 570px;
     text-align: center;
     text-transform: uppercase;
 }
+
+@mixin catName {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+
+@mixin catDescription {
+    font-size: 18px;
+    font-family: 'Kulim Park', sans-serif;
+    letter-spacing: 1px;
+}

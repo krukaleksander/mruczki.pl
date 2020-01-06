@@ -7,7 +7,21 @@ div#menu-sign {
     position: fixed;
     top: 5px;
     left: 5px;
-    z-index: 1;
+    z-index: 10;
+
+    @include ipadPro {
+        position: unset;
+        max-width: 90vw;
+        margin: 0 auto;
+        background: rgba(255, 255, 255, 0.82);
+    }
+
+    #menu-mobile-btn {
+        @include ipadPro {
+            display: none;
+        }
+    }
+
 
     .fa-sort-down {
         transform: rotateZ(-90deg);
@@ -29,12 +43,38 @@ div#menu-sign {
         right: -160px;
         display: none;
 
+        @include ipadPro {
+            display: block;
+            position: relative;
+            top: 0;
+            right: 0;
+            width: auto;
+            background: transparent;
+        }
+
         ul {
             list-style: none;
 
+            @include ipadPro {
+                display: flex;
+                justify-content: center;
+            }
+
             li {
-                li a:hover {
-                    background-color: #555;
+                @include ipadPro {
+                    margin-right: 10px;
+                }
+            }
+
+            a {
+                display: inline-block;
+                padding: 5px;
+                border-radius: 2px;
+                transition: .3s;
+
+                &:hover {
+                    text-decoration: none;
+                    background: rgb(0, 123, 255);
                     color: white;
                 }
             }

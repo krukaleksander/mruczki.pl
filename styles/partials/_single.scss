@@ -1,0 +1,54 @@
+@import './mixins';
+
+.container-single {
+    background-color: whitesmoke;
+    text-align: center;
+
+    article {
+        p {
+            &:nth-of-type(2) {
+                @include catDescription;
+            }
+        }
+    }
+
+    .cat-name {
+        @include catName;
+    }
+
+    #comment {
+        max-width: 80vw;
+    }
+
+    .comment {
+        border: 1px solid gray;
+        padding: 5px;
+        border-radius: 10px;
+        max-width: 500px;
+        margin: 0 auto;
+        background: #f4efe8;
+    }
+
+    .category-single {
+        ul {
+            list-style: none;
+
+            li {
+                a {
+                    display: inline-block;
+                    width: 100px;
+                    line-height: 30px;
+                    height: 30px;
+                    background: #007bff;
+                    color: white;
+                    border-radius: 10px;
+                    margin-top: 5px;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

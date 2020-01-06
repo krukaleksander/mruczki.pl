@@ -19,6 +19,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
 
@@ -28,11 +29,30 @@ body {
   left: 5px;
 }
 
+div#menu-sign#desktop {
+  display: none;
+}
+
 div#menu-sign {
   position: fixed;
   top: 5px;
   left: 5px;
-  z-index: 1;
+  z-index: 10;
+}
+
+@media (min-width: 1023px) {
+  div#menu-sign {
+    position: unset;
+    max-width: 90vw;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.82);
+  }
+}
+
+@media (min-width: 1023px) {
+  div#menu-sign #menu-mobile-btn {
+    display: none;
+  }
 }
 
 div#menu-sign .fa-sort-down {
@@ -56,12 +76,44 @@ div#menu-sign div.menu-header-menu-container {
   display: none;
 }
 
+@media (min-width: 1023px) {
+  div#menu-sign div.menu-header-menu-container {
+    display: block;
+    position: relative;
+    top: 0;
+    right: 0;
+    width: auto;
+    background: transparent;
+  }
+}
+
 div#menu-sign div.menu-header-menu-container ul {
   list-style: none;
 }
 
-div#menu-sign div.menu-header-menu-container ul li li a:hover {
-  background-color: #555;
+@media (min-width: 1023px) {
+  div#menu-sign div.menu-header-menu-container ul {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1023px) {
+  div#menu-sign div.menu-header-menu-container ul li {
+    margin-right: 10px;
+  }
+}
+
+div#menu-sign div.menu-header-menu-container ul a {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 2px;
+  transition: .3s;
+}
+
+div#menu-sign div.menu-header-menu-container ul a:hover {
+  text-decoration: none;
+  background: #007bff;
   color: white;
 }
 
@@ -259,4 +311,52 @@ header .logo-header {
   font-size: 18px;
   font-family: 'Kulim Park', sans-serif;
   letter-spacing: 1px;
+}
+
+.container-single {
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+.container-single article p:nth-of-type(2) {
+  font-size: 18px;
+  font-family: 'Kulim Park', sans-serif;
+  letter-spacing: 1px;
+}
+
+.container-single .cat-name {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+
+.container-single #comment {
+  max-width: 80vw;
+}
+
+.container-single .comment {
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  background: #f4efe8;
+}
+
+.container-single .category-single ul {
+  list-style: none;
+}
+
+.container-single .category-single ul li a {
+  display: inline-block;
+  width: 100px;
+  line-height: 30px;
+  height: 30px;
+  background: #007bff;
+  color: white;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.container-single .category-single ul li a:hover {
+  text-decoration: none;
 }

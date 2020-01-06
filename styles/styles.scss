@@ -15,6 +15,7 @@ body {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        background-attachment: fixed
     }
 }
 
@@ -26,3 +27,4 @@ body {
 
 @import './partials/main-page';
 @import './partials/category';
+@import './partials/single';

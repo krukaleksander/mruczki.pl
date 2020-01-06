@@ -1,0 +1,47 @@
+.container-single {
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+.container-single article p:nth-of-type(2) {
+  font-size: 18px;
+  font-family: 'Kulim Park', sans-serif;
+  letter-spacing: 1px;
+}
+
+.container-single .cat-name {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+
+.container-single #comment {
+  max-width: 80vw;
+}
+
+.container-single .comment {
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  background: #f4efe8;
+}
+
+.container-single .category-single ul {
+  list-style: none;
+}
+
+.container-single .category-single ul li a {
+  display: inline-block;
+  width: 100px;
+  line-height: 30px;
+  height: 30px;
+  background: #007bff;
+  color: white;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.container-single .category-single ul li a:hover {
+  text-decoration: none;
+}

@@ -4,7 +4,22 @@ div#menu-sign {
   position: fixed;
   top: 5px;
   left: 5px;
-  z-index: 1;
+  z-index: 10;
+}
+
+@media (min-width: 1023px) {
+  div#menu-sign {
+    position: unset;
+    max-width: 90vw;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.82);
+  }
+}
+
+@media (min-width: 1023px) {
+  div#menu-sign #menu-mobile-btn {
+    display: none;
+  }
 }
 
 div#menu-sign .fa-sort-down {
@@ -28,12 +43,44 @@ div#menu-sign div.menu-header-menu-container {
   display: none;
 }
 
+@media (min-width: 1023px) {
+  div#menu-sign div.menu-header-menu-container {
+    display: block;
+    position: relative;
+    top: 0;
+    right: 0;
+    width: auto;
+    background: transparent;
+  }
+}
+
 div#menu-sign div.menu-header-menu-container ul {
   list-style: none;
 }
 
-div#menu-sign div.menu-header-menu-container ul li li a:hover {
-  background-color: #555;
+@media (min-width: 1023px) {
+  div#menu-sign div.menu-header-menu-container ul {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1023px) {
+  div#menu-sign div.menu-header-menu-container ul li {
+    margin-right: 10px;
+  }
+}
+
+div#menu-sign div.menu-header-menu-container ul a {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 2px;
+  transition: .3s;
+}
+
+div#menu-sign div.menu-header-menu-container ul a:hover {
+  text-decoration: none;
+  background: #007bff;
   color: white;
 }
 
