@@ -4,82 +4,21 @@
 @import './mixins';
 
 div#menu-sign {
-    position: fixed;
-    top: 5px;
-    left: 5px;
-    z-index: 10;
+    @include menu;
 
     @include ipadPro {
-        position: unset;
-        max-width: 90vw;
-        margin: 0 auto;
-        background: rgba(255, 255, 255, 0.82);
-    }
-
-    #menu-mobile-btn {
-        @include ipadPro {
-            display: none;
-        }
-    }
-
-
-    .fa-sort-down {
-        transform: rotateZ(-90deg);
-        line-height: 25px;
-    }
-
-    .fa-sort-down.active {
-        transform: rotateZ(90deg);
-    }
-
-    div.menu-header-menu-container {
-        padding: 8px;
-        background: #a8e0a8;
-        font-weight: bolder;
-        border-radius: 6px;
-        text-transform: uppercase;
-        position: absolute;
-        top: -1px;
-        right: -160px;
         display: none;
-
-        @include ipadPro {
-            display: block;
-            position: relative;
-            top: 0;
-            right: 0;
-            width: auto;
-            background: transparent;
-        }
-
-        ul {
-            list-style: none;
-
-            @include ipadPro {
-                display: flex;
-                justify-content: center;
-            }
-
-            li {
-                @include ipadPro {
-                    margin-right: 10px;
-                }
-            }
-
-            a {
-                display: inline-block;
-                padding: 5px;
-                border-radius: 2px;
-                transition: .3s;
-
-                &:hover {
-                    text-decoration: none;
-                    background: rgb(0, 123, 255);
-                    color: white;
-                }
-            }
-        }
     }
+}
+
+div#menu-desktop {
+    display: none;
+
+    @include ipadPro {
+        display: block;
+        @include menu;
+    }
+
 }
 
 header {
@@ -155,19 +94,17 @@ header {
         }
 
         .main-desc {
-            margin: 1px;
+            max-width: 90vw;
+            margin: 1px auto;
             padding: 15px 8px 8px;
             text-align: center;
             letter-spacing: 1px;
             font-size: 1.2rem;
-            border: 1px solid black;
-            border-radius: 10px;
-            background-color: rgba(235, 235, 152, 0.6196078431372549);
 
             @include ipadPro {
                 width: 80vw;
                 margin: 15px auto;
-                font-size: 1rem;
+                font-size: 1.5rem;
             }
 
         }
@@ -175,6 +112,43 @@ header {
 
 
 }
+
+.main-img-wrap {
+    text-align: center;
+
+    img {
+        border: 1px solid rgb(78, 78, 78);
+        padding: 5px;
+        max-width: 90%;
+    }
+
+    img:hover {
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
+
+    .lili-img-desc {
+        text-align: center;
+        color: gray;
+        font-size: .8rem;
+
+        @include ipadPro {
+            color: rgb(72, 67, 67);
+            font-size: 1rem;
+        }
+    }
+}
+
+.visit {
+    text-align: center;
+
+    .partners-heading {
+        @include mainheading;
+        padding: 10px;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+    }
+}
+
 
 .partners {
     margin: 5px auto;
@@ -197,6 +171,8 @@ header {
         font-size: 20px;
         margin-bottom: 0px;
     }
+
+
 }
 
 @keyframes mainpage {
@@ -227,4 +203,5 @@ header {
     to {
         width: 90vw;
     }
+
 }

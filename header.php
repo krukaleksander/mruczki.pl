@@ -21,6 +21,6 @@
             <h1>mruczki.pl</h1>
         </header>
         <hr>
-        <!-- <div id="menu-sign desktop">
-    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>   -->
+        <div id="menu-desktop">
+    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>  
 </div>

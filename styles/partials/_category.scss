@@ -8,7 +8,6 @@
         padding: 10px;
         margin: 0 auto;
         background: rgba(245, 245, 245, 0.9098039215686274);
-        border-radius: 10px;
     }
 
     h2.cat-name {
@@ -17,13 +16,11 @@
 
     article {
         text-align: center;
+        margin-bottom: 10px;
+        border: 1px solid rgba(128, 128, 128, 0.3803921568627451);
+        padding: 5px;
+        border-radius: 2px;
 
-        @include ipadPro {
-            margin-bottom: 10px;
-            border: 1px solid rgba(128, 128, 128, 0.3803921568627451);
-            padding: 5px;
-            border-radius: 2px;
-        }
 
         img {
             border-radius: 25px;
@@ -33,9 +30,10 @@
 
     }
 
-    article p:nth-of-type(2) {
+    article p {
         font-size: 18px;
         font-family: 'Kulim Park', sans-serif;
         letter-spacing: 1px;
+        padding: 5px 15px;
     }
 }

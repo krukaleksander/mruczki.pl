@@ -63,6 +63,7 @@ $common: 570px;
 ;
 
 @mixin mainheading {
+    font-family: 'Pacifico', cursive;
     font-size: 25px;
     font-weight: bolder;
     text-align: center;
@@ -78,4 +79,86 @@ $common: 570px;
     font-size: 18px;
     font-family: 'Kulim Park', sans-serif;
     letter-spacing: 1px;
+}
+
+@mixin menu {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    z-index: 10;
+
+    @include ipadPro {
+        position: unset;
+        max-width: 90vw;
+        margin: 0 auto;
+        background: rgba(255, 255, 255, 0.82);
+    }
+
+    #menu-mobile-btn {
+        @include ipadPro {
+            display: none;
+        }
+    }
+
+
+    .fa-sort-down {
+        transform: rotateZ(-90deg);
+        line-height: 25px;
+    }
+
+    .fa-sort-down.active {
+        transform: rotateZ(90deg);
+    }
+
+    div.menu-header-menu-container {
+        padding: 8px;
+        background: rgba(245, 245, 245, 0.89);
+        font-weight: bolder;
+        border-radius: 6px;
+        text-transform: uppercase;
+        position: absolute;
+        top: -1px;
+        right: -160px;
+        display: none;
+        border: 2px solid gray;
+        display: none;
+
+        @include ipadPro {
+            display: block;
+            position: relative;
+            top: 0;
+            right: 0;
+            width: auto;
+            background: transparent;
+            border: none;
+        }
+
+        ul {
+            list-style: none;
+
+            @include ipadPro {
+                display: flex;
+                justify-content: center;
+            }
+
+            li {
+                @include ipadPro {
+                    margin-right: 10px;
+                }
+            }
+
+            a {
+                display: inline-block;
+                padding: 5px;
+                border-radius: 2px;
+                transition: .3s;
+
+                &:hover {
+                    text-decoration: none;
+                    background: rgb(0, 123, 255);
+                    color: white;
+                }
+            }
+        }
+    }
 }

@@ -6,7 +6,6 @@
     padding: 10px;
     margin: 0 auto;
     background: rgba(245, 245, 245, 0.909804);
-    border-radius: 10px;
   }
 }
 
@@ -17,15 +16,10 @@
 
 .wrap-category article {
   text-align: center;
-}
-
-@media (min-width: 1023px) {
-  .wrap-category article {
-    margin-bottom: 10px;
-    border: 1px solid rgba(128, 128, 128, 0.380392);
-    padding: 5px;
-    border-radius: 2px;
-  }
+  margin-bottom: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.380392);
+  padding: 5px;
+  border-radius: 2px;
 }
 
 .wrap-category article img {
@@ -34,8 +28,9 @@
   padding: 2px;
 }
 
-.wrap-category article p:nth-of-type(2) {
+.wrap-category article p {
   font-size: 18px;
   font-family: 'Kulim Park', sans-serif;
   letter-spacing: 1px;
+  padding: 5px 15px;
 }
