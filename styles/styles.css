@@ -466,8 +466,16 @@ header .logo-header {
     max-width: 90vw;
     margin: 0 auto;
     background: transparent;
+    padding: 10px;
     box-shadow: 0px 0px 30px #e4a6a6;
     background-color: rgba(255, 255, 255, 0.82);
+  }
+}
+
+@media (min-width: 1023px) and (min-width: 1023px) {
+  .container-single {
+    background-color: rgba(255, 255, 255, 0.82);
+    box-shadow: 0px 0px 30px #e4a6a6;
   }
 }
 
@@ -518,6 +526,14 @@ header .logo-header {
   max-width: 90vw;
   margin: 0 auto;
   background: transparent;
+  padding: 10px;
+}
+
+@media (min-width: 1023px) {
+  .wrap-404 {
+    background-color: rgba(255, 255, 255, 0.82);
+    box-shadow: 0px 0px 30px #e4a6a6;
+  }
 }
 
 @media (min-width: 1023px) {
@@ -577,4 +593,39 @@ header .logo-header {
   .wrap-404 .img-404-cont .img-404 {
     max-width: 300px;
   }
+}
+
+.wrap-about {
+  max-width: 90vw;
+  margin: 0 auto;
+  background: transparent;
+  padding: 10px;
+}
+
+@media (min-width: 1023px) {
+  .wrap-about {
+    background-color: rgba(255, 255, 255, 0.82);
+    box-shadow: 0px 0px 30px #e4a6a6;
+  }
+}
+
+.wrap-about .heading-about {
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.wrap-about .telephone {
+  text-align: center;
+  font-size: 25px;
+  font-family: Arial, sans-serif;
+}
+
+.wrap-about .desc-about {
+  font-size: 18px;
+  font-family: 'Kulim Park', sans-serif;
+  letter-spacing: 1px;
+  padding: 5px;
 }

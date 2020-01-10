@@ -1,0 +1,21 @@
+@import './mixins';
+
+.wrap-about {
+    @include centerCont;
+
+    .heading-about {
+        @include mainheading;
+
+    }
+
+    .telephone {
+        text-align: center;
+        font-size: 25px;
+        font-family: Arial, sans-serif;
+    }
+
+    .desc-about {
+        @include catDescription;
+        padding: 5px;
+    }
+}
