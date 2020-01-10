@@ -8,6 +8,7 @@
         padding: 10px;
         margin: 0 auto;
         background: rgba(245, 245, 245, 0.9098039215686274);
+        @include shadow;
     }
 
     h2.cat-name {

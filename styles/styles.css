@@ -88,6 +88,7 @@ div#menu-sign div.menu-header-menu-container {
 
 div#menu-sign div.menu-header-menu-container ul {
   list-style: none;
+  margin-bottom: 0px;
 }
 
 @media (min-width: 1023px) {
@@ -189,6 +190,7 @@ div#menu-desktop {
 @media (min-width: 1023px) {
   div#menu-desktop div.menu-header-menu-container ul {
     list-style: none;
+    margin-bottom: 0px;
   }
 }
 
@@ -347,6 +349,7 @@ header .logo-header {
 }
 
 .visit {
+  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -423,6 +426,7 @@ header .logo-header {
     padding: 10px;
     margin: 0 auto;
     background: rgba(245, 245, 245, 0.909804);
+    box-shadow: 0px 0px 30px #e4a6a6;
   }
 }
 
@@ -457,7 +461,17 @@ header .logo-header {
   text-align: center;
 }
 
-.container-single article p:nth-of-type(2) {
+@media (min-width: 1023px) {
+  .container-single {
+    max-width: 90vw;
+    margin: 0 auto;
+    background: transparent;
+    box-shadow: 0px 0px 30px #e4a6a6;
+    background-color: rgba(255, 255, 255, 0.82);
+  }
+}
+
+.container-single article p {
   font-size: 18px;
   font-family: 'Kulim Park', sans-serif;
   letter-spacing: 1px;
@@ -498,4 +512,69 @@ header .logo-header {
 
 .container-single .category-single ul li a:hover {
   text-decoration: none;
+}
+
+.wrap-404 {
+  max-width: 90vw;
+  margin: 0 auto;
+  background: transparent;
+}
+
+@media (min-width: 1023px) {
+  .wrap-404 {
+    background: rgba(255, 255, 255, 0.82);
+    border-top: 2px solid #b9b9b9;
+    padding-top: 10px;
+  }
+}
+
+.wrap-404 .heading-404 {
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+  text-transform: none;
+}
+
+@media (min-width: 1023px) {
+  .wrap-404 .heading-404 {
+    font-size: 35px;
+  }
+}
+
+.wrap-404 .desc-404 {
+  font-size: 18px;
+  font-family: 'Kulim Park', sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+@media (min-width: 1023px) {
+  .wrap-404 .desc-404 {
+    font-size: 22px;
+  }
+}
+
+.wrap-404 .img-404-cont {
+  padding: 10px;
+  text-align: center;
+}
+
+.wrap-404 .img-404-cont .img-404 {
+  border-radius: 50%;
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+@media (min-width: 530px) {
+  .wrap-404 .img-404-cont .img-404 {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 1023px) {
+  .wrap-404 .img-404-cont .img-404 {
+    max-width: 300px;
+  }
 }

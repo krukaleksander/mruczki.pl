@@ -1,14 +1,19 @@
 @import './mixins';
 
 .container-single {
+    @include ipadPro {
+        @include centerCont;
+        @include shadow;
+        background-color: rgba(255, 255, 255, 0.82);
+    }
+
     background-color: whitesmoke;
     text-align: center;
 
     article {
         p {
-            &:nth-of-type(2) {
-                @include catDescription;
-            }
+            @include catDescription;
+
         }
     }
 

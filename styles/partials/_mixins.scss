@@ -3,7 +3,7 @@ $iphoneXl: 830px;
 $ipad: 768px;
 $iphone6l: 670px;
 $iphoneX: 600px;
-$common: 570px;
+$common: 530px;
 
 
 @mixin iphoneX {
@@ -135,6 +135,7 @@ $common: 570px;
 
         ul {
             list-style: none;
+            margin-bottom: 0px;
 
             @include ipadPro {
                 display: flex;
@@ -161,4 +162,14 @@ $common: 570px;
             }
         }
     }
+}
+
+@mixin centerCont {
+    max-width: 90vw;
+    margin: 0 auto;
+    background: transparent;
+}
+
+@mixin shadow {
+    box-shadow: 0px 0px 30px rgb(228, 166, 166);
 }

@@ -59,6 +59,7 @@ div#menu-sign div.menu-header-menu-container {
 
 div#menu-sign div.menu-header-menu-container ul {
   list-style: none;
+  margin-bottom: 0px;
 }
 
 @media (min-width: 1023px) {
@@ -160,6 +161,7 @@ div#menu-desktop {
 @media (min-width: 1023px) {
   div#menu-desktop div.menu-header-menu-container ul {
     list-style: none;
+    margin-bottom: 0px;
   }
 }
 
@@ -318,6 +320,7 @@ header .logo-header {
 }
 
 .visit {
+  padding-bottom: 20px;
   text-align: center;
 }
 

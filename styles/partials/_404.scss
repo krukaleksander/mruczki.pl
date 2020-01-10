@@ -1,0 +1,48 @@
+@import './mixins';
+
+.wrap-404 {
+    @include centerCont;
+
+    @include ipadPro {
+        background: rgba(255, 255, 255, 0.82);
+        border-top: 2px solid rgb(185, 185, 185);
+        padding-top: 10px;
+    }
+
+    .heading-404 {
+        @include mainheading;
+        text-transform: none;
+
+        @include ipadPro {
+            font-size: 35px;
+        }
+    }
+
+    .desc-404 {
+        @include catDescription;
+        text-align: center;
+
+        @include ipadPro {
+            font-size: 22px;
+        }
+    }
+
+    .img-404-cont {
+        padding: 10px;
+        text-align: center;
+
+        .img-404 {
+            border-radius: 50%;
+            border: 1px solid gray;
+            padding: 5px;
+
+            @include common {
+                max-width: 200px;
+            }
+
+            @include ipadPro {
+                max-width: 300px;
+            }
+        }
+    }
+}
