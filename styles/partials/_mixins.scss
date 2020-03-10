@@ -143,9 +143,24 @@ $common: 530px;
             }
 
             li {
+                &:nth-child(5) {
+                    background-color: #007bff;
+                    animation: petsitterBtn 3.5s .5s linear infinite both;
+                    border-radius: 5px;
+
+                    a {
+                        color: white;
+
+                        &:hover {
+                            color: #f9d055;
+                        }
+                    }
+                }
+
                 @include ipadPro {
                     margin-right: 10px;
                 }
+
             }
 
             a {
@@ -178,4 +193,18 @@ $common: 530px;
 
 @mixin shadow {
     box-shadow: 0px 0px 30px rgb(228, 166, 166);
+}
+
+@keyframes petsitterBtn {
+    0% {
+        background-color: #3e95f2
+    }
+
+    50% {
+        background-color: #054d9a;
+    }
+
+    100% {
+        background-color: #3e95f2;
+    }
 }

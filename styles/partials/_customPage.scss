@@ -1,0 +1,73 @@
+@import './mixins';
+
+.custom-page {
+    font-family: 'Kulim Park', sans-serif;
+    padding: 20px;
+
+    .our-offer {
+        font-size: 30px;
+        font-weight: 800;
+        background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        padding-bottom: 10px;
+        border-bottom: 2px solid;
+        border-color: #15b170;
+    }
+
+    ul {
+        list-style-image: url("../img/paw.png");
+        max-width: 90%;
+        margin: 0px auto;
+        padding-top: 10px;
+
+        @include ipadPro {
+            max-width: 70%;
+
+        }
+
+        li {
+            font-size: 18px;
+            letter-spacing: 1px;
+
+            @include ipadPro {
+                line-height: 170%;
+            }
+        }
+    }
+
+    .offer-summary {
+        color: #166973;
+        font-weight: bolder;
+        font-size: 16px;
+        border: 2px solid;
+        margin-top: 5px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 2px;
+
+        @include ipadPro {
+            width: 40%;
+            margin: 10px auto;
+        }
+    }
+
+    .phone-number {
+        display: block;
+        border-bottom: none;
+    }
+
+    p {
+        padding: 15px 8px 8px;
+        text-align: center;
+        letter-spacing: 1px;
+        max-width: 90vw;
+    }
+
+    .title-custom {
+        font-family: 'Pacifico', cursive;
+        font-size: 30px;
+        font-weight: bolder;
+        text-align: center;
+    }
+}
