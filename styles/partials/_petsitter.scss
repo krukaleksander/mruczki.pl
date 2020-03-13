@@ -1,0 +1,27 @@
+@import './mixins';
+
+.petsitter-map {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #15b170;
+
+    .map-icon-wrapper {
+        text-align: center;
+        font-size: 40px;
+        color: #5e5c5c;
+    }
+
+    h3 {
+        font-size: 20px;
+        text-align: center;
+        color: #5e5c5c;
+    }
+
+    ul#cityList {
+        list-style: none;
+        color: #5e5c5c;
+
+        @include ipadPro {
+            width: 155px;
+        }
+    }
+}

@@ -91,11 +91,11 @@ div#menu-sign div.menu-header-menu-container {
   border-radius: 6px;
   text-transform: uppercase;
   position: absolute;
-  top: -1px;
-  right: -160px;
-  display: none;
+  top: 45px;
+  left: -300px;
   border: 2px solid gray;
-  display: none;
+  min-width: 225px;
+  transition: 1s;
 }
 
 @media (min-width: 1023px) {
@@ -103,7 +103,7 @@ div#menu-sign div.menu-header-menu-container {
     display: block;
     position: relative;
     top: 0;
-    right: 0;
+    left: 0;
     width: auto;
     background: transparent;
     border: none;
@@ -205,11 +205,11 @@ div#menu-desktop {
     border-radius: 6px;
     text-transform: uppercase;
     position: absolute;
-    top: -1px;
-    right: -160px;
-    display: none;
+    top: 45px;
+    left: -300px;
     border: 2px solid gray;
-    display: none;
+    min-width: 225px;
+    transition: 1s;
   }
 }
 
@@ -218,7 +218,7 @@ div#menu-desktop {
     display: block;
     position: relative;
     top: 0;
-    right: 0;
+    left: 0;
     width: auto;
     background: transparent;
     border: none;
@@ -817,4 +817,111 @@ header .logo-header {
   font-size: 30px;
   font-weight: bolder;
   text-align: center;
+}
+
+@keyframes petsitterBtn {
+  0% {
+    background-color: #3e95f2;
+  }
+  50% {
+    background-color: #054d9a;
+  }
+  100% {
+    background-color: #3e95f2;
+  }
+}
+
+#faceWid {
+  margin: 5px auto;
+  width: 310px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+@media (min-width: 1023px) {
+  #faceWid {
+    position: fixed;
+    top: 50%;
+    right: -315px;
+    transform: translateY(-50%);
+    transition: 1s;
+  }
+}
+
+#faceWid #faceTrigger {
+  overflow: hidden;
+}
+
+#faceWid #faceTrigger,
+#faceWid #faceTriggerCancel {
+  display: none;
+}
+
+@media (min-width: 1023px) {
+  #faceWid #faceTrigger,
+  #faceWid #faceTriggerCancel {
+    display: block;
+    position: absolute;
+    top: -50px;
+    left: -65px;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid gray;
+  }
+}
+
+#faceWid #faceTrigger img,
+#faceWid #faceTriggerCancel img {
+  width: 50px;
+  height: 50px;
+}
+
+#faceWid #faceTriggerCancel {
+  display: none;
+}
+
+#faceWid h4 {
+  padding: 5px;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+
+@keyframes petsitterBtn {
+  0% {
+    background-color: #3e95f2;
+  }
+  50% {
+    background-color: #054d9a;
+  }
+  100% {
+    background-color: #3e95f2;
+  }
+}
+
+.petsitter-map {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #15b170;
+}
+
+.petsitter-map .map-icon-wrapper {
+  text-align: center;
+  font-size: 40px;
+  color: #5e5c5c;
+}
+
+.petsitter-map h3 {
+  font-size: 20px;
+  text-align: center;
+  color: #5e5c5c;
+}
+
+.petsitter-map ul#cityList {
+  list-style: none;
+  color: #5e5c5c;
+}
+
+@media (min-width: 1023px) {
+  .petsitter-map ul#cityList {
+    width: 155px;
+  }
 }

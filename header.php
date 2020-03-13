@@ -10,7 +10,9 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/styles/styles.css"> 
 	<?php wp_enqueue_script( 'comment-reply' ); ?>
-	<?php wp_head(); ?>
+    <?php wp_head(); ?>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>     
 <body>
     <div id="menu-sign"><button id="menu-mobile-btn" class="btn btn-success">Menu <i class="fas fa-sort-down"></i></button>
@@ -23,4 +25,5 @@
         <hr>
         <div id="menu-desktop">
     <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>  
+    
 </div>

@@ -1,0 +1,39 @@
+@keyframes petsitterBtn {
+  0% {
+    background-color: #3e95f2;
+  }
+  50% {
+    background-color: #054d9a;
+  }
+  100% {
+    background-color: #3e95f2;
+  }
+}
+
+.petsitter-map {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #15b170;
+}
+
+.petsitter-map .map-icon-wrapper {
+  text-align: center;
+  font-size: 40px;
+  color: #5e5c5c;
+}
+
+.petsitter-map h3 {
+  font-size: 20px;
+  text-align: center;
+  color: #5e5c5c;
+}
+
+.petsitter-map ul#cityList {
+  list-style: none;
+  color: #5e5c5c;
+}
+
+@media (min-width: 1023px) {
+  .petsitter-map ul#cityList {
+    width: 155px;
+  }
+}
