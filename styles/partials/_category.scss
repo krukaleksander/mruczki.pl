@@ -4,6 +4,8 @@
 
 .wrap-category {
     @include ipadPro {
+        display: flex;
+        flex-wrap: wrap;
         width: 90vw;
         padding: 10px;
         margin: 0 auto;
@@ -22,11 +24,21 @@
         padding: 5px;
         border-radius: 2px;
 
+        @include ipadPro {
+            flex-basis: 33.33%;
+        }
+
 
         img {
             border-radius: 25px;
             border: 2px solid rgb(218, 218, 218);
             padding: 2px;
+
+            &:hover {
+                transform: scale(1.05);
+                border-top: 2px solid rgb(23, 162, 184);
+                border-right: 2px solid rgb(23, 162, 184);
+            }
         }
 
     }

@@ -486,6 +486,8 @@ header .logo-header {
 
 @media (min-width: 1023px) {
   .wrap-category {
+    display: flex;
+    flex-wrap: wrap;
     width: 90vw;
     padding: 10px;
     margin: 0 auto;
@@ -507,10 +509,22 @@ header .logo-header {
   border-radius: 2px;
 }
 
+@media (min-width: 1023px) {
+  .wrap-category article {
+    flex-basis: 33.33%;
+  }
+}
+
 .wrap-category article img {
   border-radius: 25px;
   border: 2px solid #dadada;
   padding: 2px;
+}
+
+.wrap-category article img:hover {
+  transform: scale(1.05);
+  border-top: 2px solid #17a2b8;
+  border-right: 2px solid #17a2b8;
 }
 
 .wrap-category article p {
