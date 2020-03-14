@@ -27,3 +27,12 @@
     <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>  
     
 </div>
+<div class="search-form-wrapper">
+<form role="search" method="get" id="searchform" class="searchform" action="<?php bloginfo("url"); ?>">
+     <div>
+         <label class="screen-reader-text" for="inputSearch">Szukaj:</label>
+         <input type="text" value="" name="s" id="inputSearch" />
+         <input type="submit" id="searchsubmit" class="btn btn-info" value="Szukaj" />
+     </div>
+ </form>
+ </div>  

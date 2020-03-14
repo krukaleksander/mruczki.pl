@@ -1,0 +1,39 @@
+@import './mixins';
+
+.search-form-wrapper {
+    @include ipadPro {
+        display: flex;
+        justify-content: flex-end;
+        width: 90vw;
+        padding: 10px 0px;
+        margin: 0 auto;
+
+    }
+
+    #searchform {
+        padding: 10px;
+        text-align: center;
+        max-width: 360px;
+        margin: 0 auto;
+        background-color: rgba(199, 230, 199, 0.78);
+
+        @include ipadPro {
+            margin: 0;
+        }
+
+        .screen-reader-text {
+            font-weight: bolder;
+        }
+
+        #searchsubmit {
+            padding: 3px 8px;
+            font-weight: bolder;
+            font-family: 'Kulim Park', sans-serif;
+        }
+
+        #inputSearch {
+            line-height: 180%;
+            max-width: 160px;
+        }
+    }
+}
